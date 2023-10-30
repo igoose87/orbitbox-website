@@ -94,7 +94,6 @@ header {
 
 
 /* **Styles for main */
-
 .main {
   display: flex;
   flex-direction: column;
@@ -103,119 +102,6 @@ header {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-}
-
-.banner {
-  color: var(--black-main);
-  text-transform: uppercase;
-  padding-top: 30px;
-  text-align: center;
-  font-weight: bolder;
-}
-
-.products-list {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: flex-start;
-
-  padding-top: 30px;
-}
-
-.product-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-
-    height: 300px;
-    width: 265px;
-    margin: 0 50px 50px;
-
-    border: 1px solid var(--black-main);
-    color: var(--black-main);
-    text-transform: uppercase;
-
-    box-shadow: 0px 11px 7px rgba(0, 0, 0, 0.36);;
-}
-
-.product-image {
-  height: 235px;
-  width: 265px;
-}
-
-.image {
-  height: 288px;
-  width:  265px;
-}
-
-.product-description {
-  display: flex;
-  flex-direction: column;
-  background-color: var(--black-main);
-  color: var(--light-grey);
-
-  height: 65px;
-
-  border-top: 1px solid var(--light-grey);
-  cursor: pointer;
-}
-
-.product-description:hover {
-  background-color: var(--light-grey);
-  color: var(--black-main);
-  border-top: 1px solid var(--black-main);
-}
-
-.product-description-name {
-  padding-top: 10px;
-  text-align: center;
-}
-
-.product-description-price {
-  padding-top: 5px;
-  text-align: center;
-}
-
-
-
-/* ** Styles for hamburger */
-#checkbox_toggle {
-  display: none;
-}
-
-/* styles for hamburger menu */
-.hamburger {
-  display: none;
-  font-size: 24px;
-  cursor: pointer;
-}
-
-.hamburgerLine {
-  display: block;
-  background-color: #F1F2F1;
-  height: 2px;
-  position: relative;
-  width: 24px;
-}
-
-.hamburgerLine::before,
-.hamburgerLine::after {
-  background-color: #F1F2F1;
-  content: "";
-  display: block;
-  position: absolute;
-  transition: all .3s;
-  width: 100%;
-  height: 100%;
-}
-
-.hamburgerLine::before {
-  top: 7px;
-}
-
-.hamburgerLine::after {
-  top: -7px;
 }
 
 
