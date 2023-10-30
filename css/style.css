@@ -32,7 +32,7 @@ body {
 
   min-height: 100%;
 
-  background-color: var(--regular-grey);
+  background-color: var(--light-grey);
 }
 
 
@@ -113,12 +113,22 @@ header {
     flex-direction: column;
     justify-content: end;
 
+    height: 300px;
     width: 265px;
-    height: 390px;
     margin: 0 50px 50px;
 
     border: 1px solid var(--black-main);
     color: var(--black-main);
+}
+
+.product-image {
+  height: 235px;
+  width: 265px;
+}
+
+.image {
+  height: 288px;
+  width:  265px;
 }
 
 .product-description {
@@ -164,4 +174,6 @@ footer {
   max-width: 1200px; 
   margin-left: auto;
   margin-right: auto;
+  
+  height: 50px;
 }
