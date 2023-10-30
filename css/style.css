@@ -88,21 +88,67 @@ header {
 
 /* **Styles for main */
 
-main {
+.main {
+  display: flex;
+  flex-direction: row;
   flex: 1 1 auto;
-  display: flex;
-  flex-direction: row;
-}
-
-#main-wrapper {
-  display: flex;
-  flex-direction: row;
 
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
 
+.products-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+
+  padding-top: 30px;
+}
+
+.product-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+
+    width: 265px;
+    height: 390px;
+    margin: 0 50px 50px;
+
+    border: 1px solid var(--black-main);
+    color: var(--black-main);
+}
+
+.product-description {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--black-main);
+  color: var(--light-grey);
+
+  height: 65px;
+
+  border-top: 1px solid var(--light-grey);
+  cursor: pointer;
+}
+
+.product-description:hover {
+  background-color: var(--light-grey);
+  color: var(--black-main);
+  border-top: 1px solid var(--black-main);
+}
+
+.product-description-name {
+  padding-top: 10px;
+  text-align: center;
+}
+
+.product-description-price {
+  padding-top: 5px;
+  text-align: center;
+}
+  
 
 
 /* **Styles for footer */
