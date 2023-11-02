@@ -48,7 +48,37 @@
     </header>
 
     <main class="main">
-      
+      <div class="banner">
+        Welcome back, username
+      </div>
+      <div class="shipment-info"> 
+        <div class="shipment-info-form">
+          <form id="shipment-form">
+            <fieldset>
+              <legend class="form-element">Enter your shipment address:</legend>
+              <label class="address-form-item" for="address-name">Address name:</label><br>
+              <input class="address-form-item" type="text" name="address-name" id="address-name"><br>
+              <label class="address-form-item" for="address">Address:</label><br>
+              <input class="address-form-item" type="text" name="address" id="address"><br>
+              <label class="address-form-item" for="ship-method">Ship-method</label><br>
+              <select name="ship-method" id="ship-method">
+                <option value="DHL">DHL</option>
+                <option value="UPS">UPS</option>
+                <option value="store">Pickup in store</option>
+            </select>
+            <input type="submit" value="Add address!" id="submit-address" onclick="submitAddress">
+            </fieldset>
+          </form>
+        </div>
+        <div class="shipment-info-form-output">
+          <div class="addresses">
+            Your address:
+          </div>
+          <div id="addresses-content">
+            <input type="submit" value="Delete address!" id="delete-address" onclick="removeAddress">
+          </div>
+        </div>
+      </div> 
     </main>
     <footer>
       <div class="content-wrapper" id="footer-wrapper">
@@ -69,5 +99,6 @@
 
   <script src="js/page-load-timer.js"></script>
   <script src="js/active-page.js"></script>
+  <script src="js/localstorage-util.js"></script>
 </body>
 </html>
