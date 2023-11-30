@@ -24,13 +24,13 @@ function login () {
     headerContent.innerHTML =
       `
         <div class="header-nav-item" id="nav-item-1">
-          <a href="../about-us.html">About us</a>
+          <a href="about-us.html">About us</a>
         </div>
         <div class="header-nav-item" id="nav-item-2">
-          <a href="../account.html">${storage.getItem("name")}</a>
+          <a href="account.html">${storage.getItem("name")}</a>
         </div>
         <div class="header-nav-item" id="nav-item-3">
-          <a href="../cart.html">Cart</a>
+          <a href="cart.html">Cart</a>
         </div>
       </div>
       <div class="header-nav-item">
