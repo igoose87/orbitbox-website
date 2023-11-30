@@ -18,15 +18,9 @@
   font-weight: bolder;
 }
 
-.shipment-info {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-
-  margin-top: 30px;
-
+.weather {
+  margin-top: 25px;
   color: var(--black-main);
-
 }
 
 .shipment-info-form {
