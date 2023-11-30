@@ -33,22 +33,23 @@
             </div>
             <input type="checkbox" id="checkbox_toggle">
             <label for="checkbox_toggle" class="hamburger"><span class="hamburgerLine"></span></label>
-            <div class="header-right-half">
+            <div class="header-right-half" id="header-right-half">
               <div class="header-nav-item" id="nav-item-1">
                 <a href="about-us.html">About us</a>
               </div>
-              <div class="header-nav-item" id="nav-item-2">
-                <a href="account.html">Account</a>
-              </div>
-              <div class="header-nav-item" id="nav-item-3">
-                <a href="cart.html">Cart</a>
+              <div id="auth">
+                <form id="auth-form">
+                  <input class="auth-item" placeholder="username" type="text" id="username" name="username" required>
+                  <input class="auth-item"  placeholder="password" type="password" id="password" name="password" required>
+                  <button id="sign-in" class="auth-item" type="submit">Sign in</button>
+                </form>
+                <p id="auth-quest">Don't have a profile? <a href="register">Sign up</a></p>
               </div>
             </div>
       </div>
     </header>
 
-    <main class="main">
-      
+    <main class="main">      
     </main>
     <footer>
       <div class="content-wrapper" id="footer-wrapper">
@@ -69,5 +70,6 @@
 
   <script src="js/page-load-timer.js"></script>
   <script src="js/active-page.js"></script>
+  <script src="js/auth.js"></script>
 </body>
 </html>

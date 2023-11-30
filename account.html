@@ -33,52 +33,27 @@
             </div>
             <input type="checkbox" id="checkbox_toggle">
             <label for="checkbox_toggle" class="hamburger"><span class="hamburgerLine"></span></label>
-            <div class="header-right-half">
+            <div class="header-right-half" id="header-right-half">
               <div class="header-nav-item" id="nav-item-1">
                 <a href="about-us.html">About us</a>
               </div>
-              <div class="header-nav-item" id="nav-item-2">
-                <a href="account.html">Account</a>
-              </div>
-              <div class="header-nav-item" id="nav-item-3">
-                <a href="cart.html">Cart</a>
+              <div id="auth">
+                <form id="auth-form">
+                  <input class="auth-item" placeholder="username" type="text" id="username" name="username" required>
+                  <input class="auth-item"  placeholder="password" type="password" id="password" name="password" required>
+                  <button id="sign-in" class="auth-item" type="submit">Sign in</button>
+                </form>
+                <p id="auth-quest">Don't have a profile? <a href="register">Sign up</a></p>
               </div>
             </div>
       </div>
     </header>
 
     <main class="main">
-      <div class="banner">
+      <div class="banner" id="greeting-text">
         Welcome back, username
       </div>
-      <div class="shipment-info"> 
-        <div class="shipment-info-form">
-          <form id="shipment-form">
-            <fieldset>
-              <legend class="form-element">Enter your shipment address:</legend>
-              <label class="address-form-item" for="address-name">Address name:</label><br>
-              <input class="address-form-item" type="text" name="address-name" id="address-name"><br>
-              <label class="address-form-item" for="address">Address:</label><br>
-              <input class="address-form-item" type="text" name="address" id="address"><br>
-              <label class="address-form-item" for="ship-method">Ship-method</label><br>
-              <select name="ship-method" id="ship-method">
-                <option value="DHL">DHL</option>
-                <option value="UPS">UPS</option>
-                <option value="store">Pickup in store</option>
-            </select>
-            <input type="submit" value="Add address!" id="submit-address" onclick="submitAddress">
-            </fieldset>
-          </form>
-        </div>
-        <div class="shipment-info-form-output">
-          <div class="addresses">
-            Your address:
-          </div>
-          <div id="addresses-content">
-            <input type="submit" value="Delete address!" id="delete-address" onclick="removeAddress">
-          </div>
-        </div>
-      </div> 
+      
     </main>
     <footer>
       <div class="content-wrapper" id="footer-wrapper">
@@ -100,5 +75,6 @@
   <script src="js/page-load-timer.js"></script>
   <script src="js/active-page.js"></script>
   <script src="js/localstorage-util.js"></script>
+  <script src="js/auth.js"></script>
 </body>
 </html>

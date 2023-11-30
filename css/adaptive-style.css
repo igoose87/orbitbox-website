@@ -55,7 +55,7 @@
       background-color: var(--black-main);
       color: var(--light-grey);
       text-align: center;
-      margin-top: 180px;
+      margin-top: 200px;
       right: 0;
       left: 0;
   }
@@ -87,7 +87,13 @@
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 410px) {
+
+  #auth-form {
+    display: flex;
+    flex-direction: column;
+  }
+
   .product-item {
     margin: 0 0 50px;
   }
